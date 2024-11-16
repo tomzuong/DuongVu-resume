@@ -11,10 +11,26 @@
 
 nav {
 	background-color: #333;
-	padding: 14px 20px;
-	margin: 0px 0px 30px 0px ;
+	overflow: hidden;
 }
 
 nav a {
 	color: white;
+	padding: 14px 20px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.menu_left {
+	float: left;
+}
+
+.menu_right {
+	float: right;
+}
+
+nav a:hover {
+	background-color: #DDD;
+	color: black;
 }
