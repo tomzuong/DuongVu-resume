@@ -10,19 +10,22 @@
 	<link rel="stylesheet" type="" href="css/1.css">
 </head>
 <body>
-	<h1 id="menu_text">My Resume</h1>
+	<div id="resume">
+		<img id="back_img" src="assets/back.jpg" alt="back">
+		<div id="menu_text">My Resume</div>
+	</div>
 
 	<nav>
-		<a href="#about" class="menu_left">About</a>
-		<a href="#education" class="menu_left">Education</a>
-		<a href="#score" class="menu_left">Score</a>
-		<a href="#social" class="menu_right">Social media</a>
+		<a href="#about" id="menu_left">About</a>
+		<a href="#education" id="menu_left">Education</a>
+		<a href="#score" id="menu_left">Score</a>
+		<a href="#social" id="menu_right">Social media</a>
 	</nav>
 
 	<div class="flex_container">
-		<div class="left_side">
+		<div id="left_side">
 			<div class="flex_container">
-				<div class="about">
+				<div id="about">
 					<h2 id="about">About me</h2>
 					<p><em>I am working in the information tecnology file</em></p>
 					<ul>
@@ -30,7 +33,9 @@
 						<li><strong>Country:</strong> Viet Nam</li>
 					</ul>
 				</div>
-				<img src="assets/photo.jpg" alt="my photo" width="115.2" height="204.8">
+				<div id="photo">
+					<img id="my_photo"src="assets/photo.jpg" alt="my photo">
+				</div>
 			</div>
 
 			<h2 id="education">Education</h2>
@@ -41,7 +46,7 @@
 			</ol>
 		</div>
 
-		<div class="right_side">	
+		<div id="right_side">	
 			<h2 id="score">Score</h2>
 			<table>
 				<tr>
@@ -79,6 +84,41 @@
 			<h2 id="social">Social Media</h2>
 			<p>Facebook: <a href="https://www.facebook.com/duong.vuthai.357">Duong Vu</a></p>
 			<p>Youtube:  <a href="https://www.youtube.com/@duongvuthai2412">Duong Vu</a></p>
+
+			<h2 id="course">Online course</h2>
+			<div id="course_container">
+				<div class="course_item">
+					<img class="course_img" src="assets/math.jpg">
+					<div class="course_title">Logic Math</div>
+					<div class="course_desc">Toán tư duy cơ bản, xây dựng nền tảng cho việc học kĩ thuật và lập trình bậc đại học</div>
+				</div>
+				<div class="course_item">
+					<img class="course_img" src="assets/web.jpg">
+					<div class="course_title">Web Basic</div>
+					<div class="course_desc">Lập trình website cho người mới bắt đầu, xây dựng website cá nhân và hệ thống backend theo ý muốn</div>
+				</div>
+				<div class="course_item">
+					<img class="course_img" src="assets/python.jpg">
+					<div class="course_title">Python Basic</div>
+					<div class="course_desc">Toán tư duy cơ bản, xây dựng nền tảng cho việc học kĩ thuật và lập trình bậc đại học</div>
+				</div>
+				<div class="course_item">
+					<img class="course_img" src="assets/game.jpg">
+					<div class="course_title">Game Python</div>
+					<div class="course_desc">Lập trình Game rắn săn mồi, đồng hồ đếm ngược là flappy bird bằng thư viện đồ họa pygamen</div>
+				</div>
+				<div class="course_item">
+					<img class="course_img" src="assets/data.jpg">
+					<div class="course_title">Data Science</div>
+					<div class="course_desc">Xử dụng kĩ thuật làm sạch dữ liệu và vẽ biểu đồ bằng thư viện matplotlib để phân tích điểm thi đại học 2020</div>
+				</div>
+				<div class="course_item">
+					<img class="course_img" src="assets/ai.jpg">
+					<div class="course_title">AI Basic</div>
+					<div class="course_desc">Lập trình trí tuệ nhân tạo, thuật toán KNN, K-means, Regression và Gradient Descent, sử dụng toán cao cấp và ma trận cơ bản</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 	<footer>
